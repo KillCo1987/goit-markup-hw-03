@@ -39,7 +39,43 @@ img {
   list-style-type: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.suptitle {
+  margin-bottom: 50px;
+}
+
 /* = = = = = Header = = = = =*/
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  align-items: center;
+  display: flex;
+}
+
+.navigator-list-wrapper {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo {
   font-family: var(--secondary-font), sans-serif;
@@ -49,6 +85,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000;
+
+  margin-right: 92px;
 }
 
 .logo-span {
@@ -64,6 +102,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.navigator-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-item.current {
   color: var(--interactive-color);
 }
@@ -72,7 +114,7 @@ img {
   color: var(--label-color);
 }
 
-.header-contacts > a {
+/* .header-contacts > a {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -81,15 +123,42 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--description-color);
+} */
+
+.tel-link {
+  font-family: var(--main-font), sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+}
+
+.mail-link {
+  font-family: var(--main-font), sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 /* = = = = =  Hero section = = = = = */
 
 .main-section {
+  display: flex;
   background-color: #2f303a;
+  flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.main-section > h1 {
+.main-title {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -115,9 +184,35 @@ img {
   background: var(--interactive-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  /* width: 200px; */
+  align-self: center;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  margin-top: 30px;
 }
 
 /*  = = = = = = VALUES SECTION = = = = = = */
+
+.values-section {
+  background: #e5e5e5;
+}
+
+.values-list-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.value-list {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
 
 .values-list-wrapper h3 {
   font-family: var(--main-font), sans-serif;
@@ -128,6 +223,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--label-color);
+  margin-bottom: 10px;
 }
 
 .values-list-wrapper p {
@@ -144,7 +240,22 @@ img {
 
 /* = = = = = = What We Do Section = = = = = = */
 
-.what-we-do-section > h2 {
+.what-we-do-section {
+  background: #e5e5e5;
+}
+
+.what-we-do-list-wrapper {
+  display: flex;
+}
+.what-we-do-list-wrapper > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-we-do-list-wrapper > li {
+  flex-basis: calc((100% - 90) / 3);
+}
+
+.what-we-do-title {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -157,6 +268,35 @@ img {
 }
 
 /*  = = = = = Team Section = = = = = */
+
+.our-team-title {
+  font-family: var(--main-font), sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--label-color);
+}
+
+.team-images-list-wrapper {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-image-list {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .team-section > h2 {
   font-family: var(--main-font), sans-serif;
@@ -180,6 +320,8 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--label-color);
+
+  margin-bottom: 10px;
 }
 
 .team-section p {
@@ -192,15 +334,33 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--description-color);
+
+  padding-bottom: 30px;
+}
+
+.team-image-item {
+  margin-bottom: 30px;
 }
 
 /* = = = = = Footer = = = = = */
 
 .footer {
+  background: #f5f4fa;
+  /* align-items: center; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
   background-color: #2f303a;
 }
 
+.footer-contacts-list-wrapper {
+  /* display: flex;
+  flex-direction: column; */
+}
+
 .footer-logo {
+  display: block;
   font-family: var(--secondary-font), sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -208,6 +368,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--secondary-main-color);
+  margin-bottom: 20px;
 }
 
 .footer-address > p {
@@ -218,9 +379,15 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-main-color);
+  margin-bottom: 8px;
 }
 
-.footer-address > a {
+.footer-address {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.footer-contact-link {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -228,6 +395,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact-link:not(:last-child) {
+  margin-bottom: 80px;
 }
 
 /* = = = = = Interactive section = = = = = */
@@ -239,15 +410,20 @@ img {
   color: var(--interactive-color);
 }
 
-.header-contacts > a:hover,
-.header-contacts > a:focus {
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--interactive-color);
+}
+
+.tel-link:hover,
+.tel-link:focus {
   color: var(--interactive-color);
 }
 
 /* Footer interactive section*/
 
-.footer-address > a:hover,
-.footer-address > a:focus {
+.footer-contact-link:hover,
+.footer-contact-link:focus {
   color: var(--secondary-main-color);
 }
 
