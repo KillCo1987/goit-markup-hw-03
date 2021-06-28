@@ -354,11 +354,6 @@ img {
   background-color: #2f303a;
 }
 
-.footer-contacts-list-wrapper {
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .footer-logo {
   display: block;
   font-family: var(--secondary-font), sans-serif;
@@ -380,11 +375,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-main-color);
   margin-bottom: 8px;
-}
-
-.footer-address {
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .footer-contact-link {
