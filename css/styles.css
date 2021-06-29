@@ -182,7 +182,6 @@ img {
   cursor: pointer;
   color: var(--secondary-main-color);
   background: var(--interactive-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   /* width: 200px; */
   align-self: center;
@@ -198,7 +197,7 @@ img {
 /*  = = = = = = VALUES SECTION = = = = = = */
 
 .values-section {
-  background: #e5e5e5;
+  background: #ffffff;
 }
 
 .values-list-wrapper {
@@ -241,7 +240,7 @@ img {
 /* = = = = = = What We Do Section = = = = = = */
 
 .what-we-do-section {
-  background: #e5e5e5;
+  background: #ffffff;
 }
 
 .what-we-do-list-wrapper {
@@ -268,6 +267,10 @@ img {
 }
 
 /*  = = = = = Team Section = = = = = */
+
+.team-section {
+  background-color: #f5f4fa;
+}
 
 .our-team-title {
   font-family: var(--main-font), sans-serif;
@@ -419,10 +422,16 @@ img {
 
 /* = = = = = PORTFOLIO = = = = =  */
 
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-portfolio {
+  padding-top: 94px;
+}
+
 .buttons-list-wrapper button {
   background: var(--secondary-main-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   font-family: var(--main-font), sans-serif;
   font-style: normal;
@@ -432,6 +441,17 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  border: none;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.button-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .projects-list-wrapper h3 {
@@ -452,6 +472,32 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--description-color);
+}
+
+.projects-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.project-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.main-section-buttons {
+  margin-bottom: 34px;
+}
+
+.buttons-list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-projects {
+  padding-bottom: 94px;
 }
 
 /* = = = = = PORTFOLIO Interactive section = = = = = */
