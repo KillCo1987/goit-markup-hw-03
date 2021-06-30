@@ -51,6 +51,10 @@ img {
   padding-bottom: 94px;
 }
 
+.section-padding-middle {
+  padding-bottom: 94px;
+}
+
 .suptitle {
   margin-bottom: 50px;
 }
@@ -301,19 +305,12 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-section > h2 {
-  font-family: var(--main-font), sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.66;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--label-color);
+.card-data {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.team-section h3 {
+.card-text-suptitle {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -327,7 +324,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-section p {
+.card-text {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -337,12 +334,6 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--description-color);
-
-  padding-bottom: 30px;
-}
-
-.team-image-item {
-  margin-bottom: 30px;
 }
 
 /* = = = = = Footer = = = = = */
@@ -380,6 +371,10 @@ img {
   margin-bottom: 8px;
 }
 
+.footer-contact-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-contact-link {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
@@ -388,10 +383,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-contact-link:not(:last-child) {
-  margin-bottom: 80px;
 }
 
 /* = = = = = Interactive section = = = = = */
@@ -426,7 +417,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.main-portfolio {
+.main-section-portfolio {
   padding-top: 94px;
 }
 
@@ -454,7 +445,12 @@ img {
   margin-right: 8px;
 }
 
-.projects-list-wrapper h3 {
+.card-data-portfolio {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-text-suptitle-portfolio {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -462,9 +458,11 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--label-color);
+
+  margin-bottom: 4px;
 }
 
-.projects-list-wrapper p {
+.card-text-portfolio {
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -487,13 +485,10 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.main-section-buttons {
-  margin-bottom: 34px;
-}
-
 .buttons-list-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-projects {
